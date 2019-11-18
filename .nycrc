@@ -1,0 +1,17 @@
+{
+  "all": true,
+  "temp-dir": "dist/.nyc_output",
+  "report-dir": "dist/coverage",
+  "cache-dir": "dist/.cache",
+  "exclude-after-remap": false,
+  "require": ["esm", "ts-node/register/transpile-only"],
+  "extension": [".ts"],
+  "include": [
+    "src/**/*"
+  ],
+  "reporter": [
+    "lcov",
+    "text",
+    "clover"
+  ]
+}
